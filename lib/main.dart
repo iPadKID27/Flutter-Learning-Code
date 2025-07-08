@@ -47,24 +47,27 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          margin: EdgeInsets.all(50),
-          padding: EdgeInsets.all(50),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25),
-            color: Colors.red,
+          color: Colors.black38,
+          child: Column(
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  color: Colors.red,
+                ),
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  color: Colors.red,
+                ),
+              ),
+            ],
           ),
-          child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(50),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25),
-            color: Colors.orange,
-          ),
-          child: Text("Hello", style: TextStyle(color: Colors.black)),
-        ),
         ),
       ),
     );

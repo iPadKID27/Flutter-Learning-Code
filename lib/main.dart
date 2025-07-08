@@ -46,7 +46,26 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text("Hello", style: TextStyle(color: Colors.amber)),
+        child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          margin: EdgeInsets.all(50),
+          padding: EdgeInsets.all(50),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(25),
+            color: Colors.red,
+          ),
+          child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          padding: EdgeInsets.all(50),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(25),
+            color: Colors.orange,
+          ),
+          child: Text("Hello", style: TextStyle(color: Colors.black)),
+        ),
+        ),
       ),
     );
   }

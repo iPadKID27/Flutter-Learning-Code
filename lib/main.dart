@@ -4,6 +4,12 @@ void main() {
   runApp(const MyApp());
 }
 
+String name = "maksdjka";
+int number = 1;
+double ladjsj = 1.0;
+List mylist = ['saksdjka', 'ajshdgahsdb'];
+Map<String, dynamic> myMap = {"String": "String", "String2": 4444 };
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -12,9 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -38,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text("Hello", style: TextStyle(color: Colors.amber),),
+        child: Text("Hello", style: TextStyle(color: Colors.amber)),
       ),
     );
   }

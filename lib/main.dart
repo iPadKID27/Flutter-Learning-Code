@@ -44,20 +44,20 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
-        leading: Icon(Icons.account_circle, color: Colors.amber,),
+        leading: Icon(Icons.account_circle, color: Colors.amber),
       ),
       body: Container(
         padding: EdgeInsets.all(50),
         child: Stack(
           children: [
-            Image.asset(
-              "assets/images/bg.jpg",
-              fit: BoxFit.cover,
-              height: 300,
+            SizedBox(height: 300, child: Center(child: Text("sadkasd"))),
+            ListTile(
+              leading: Icon(Icons.adb_outlined),
+              tileColor: Colors.red,
+              title: Text("saidjas"),
+              trailing: Text("asdkaiskd"),
+              onTap: () {},
             ),
-            SizedBox(
-              height: 300,
-              child: Center(child: Text("sadkasd")))
           ],
         ),
       ),

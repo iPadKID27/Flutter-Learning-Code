@@ -56,7 +56,9 @@ class _MyHomePageState extends State<MyHomePage> {
               tileColor: Colors.red,
               title: Text("saidjas"),
               trailing: Text("asdkaiskd"),
-              onTap: () {},
+              onTap: () {
+                print("aosjdoiasjd");
+              },
             ),
           ],
         ),

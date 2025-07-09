@@ -19,14 +19,32 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("Flutter Mapp"), centerTitle: true),
+        floatingActionButton: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FloatingActionButton(
+              onPressed: () {
+                print("aksdjakjsd");
+              },
+              child: Icon(Icons.add),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            FloatingActionButton(
+              onPressed: () {
+                print("aksdjakjsd");
+              },
+              child: Icon(Icons.add),
+            ),
+          ],
+        ),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
             NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
           ],
-          onDestinationSelected: (int value) {
-            print(value);
-          },
+          onDestinationSelected: (int value) {},
           selectedIndex: 0,
         ),
       ),

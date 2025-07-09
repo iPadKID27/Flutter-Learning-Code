@@ -44,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        leading: Icon(Icons.account_circle, color: Colors.amber,),
       ),
       body: Container(
         padding: EdgeInsets.all(50),

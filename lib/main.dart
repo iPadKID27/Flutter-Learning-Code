@@ -45,17 +45,20 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Stack(
-        children: [
-          Image.asset(
-            "assets/images/bg.jpg",
-            fit: BoxFit.cover,
-            height: 300,
-          ),
-          SizedBox(
-            height: 300,
-            child: Center(child: Text("sadkasd")))
-        ],
+      body: Container(
+        padding: EdgeInsets.all(50),
+        child: Stack(
+          children: [
+            Image.asset(
+              "assets/images/bg.jpg",
+              fit: BoxFit.cover,
+              height: 300,
+            ),
+            SizedBox(
+              height: 300,
+              child: Center(child: Text("sadkasd")))
+          ],
+        ),
       ),
     );
   }

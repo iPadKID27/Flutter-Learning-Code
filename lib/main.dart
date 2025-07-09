@@ -46,23 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         leading: Icon(Icons.account_circle, color: Colors.amber),
       ),
-      body: Container(
-        padding: EdgeInsets.all(50),
-        child: Stack(
-          children: [
-            SizedBox(height: 300, child: Center(child: Text("sadkasd"))),
-            ListTile(
-              leading: Icon(Icons.adb_outlined),
-              tileColor: Colors.red,
-              title: Text("saidjas"),
-              trailing: Text("asdkaiskd"),
-              onTap: () {
-                print("aosjdoiasjd");
-              },
-            ),
-          ],
-        ),
-      ),
+      body: Wrap(children: [
+        Text("askdjiasjd"),Text("askdjiasjd"),Text("askdjiasjd"),Text("askdjiasjd"),Text("askdjiasjd"),Text("askdjiasjd"),Text("askdjiasjd"),Text("askdjiasjd"),
+      ],),
     );
   }
 }

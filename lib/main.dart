@@ -18,15 +18,16 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter Mapp"),
-          centerTitle: false,
-          leading: Icon(Icons.login),
-          actions: [
-            Text("askjdkasjd"),
-            Icon(Icons.login)
+        appBar: AppBar(title: Text("Flutter Mapp"), centerTitle: true),
+        bottomNavigationBar: NavigationBar(
+          destinations: [
+            NavigationDestination(icon: Icon(Icons.home), label: "Home"),
+            NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
           ],
-          backgroundColor: Colors.teal,
+          onDestinationSelected: (int value) {
+            print(value);
+          },
+          selectedIndex: 0,
         ),
       ),
     );

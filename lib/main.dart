@@ -19,14 +19,15 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("Flutter Mapp"), centerTitle: true),
-        drawer: Drawer(
-          child: Column(
-            children: [
-              DrawerHeader(child: Text("Drawer")),
-              ListTile(
-                title: Text("Logout"),
-              ),
-            ],
+        drawer: SafeArea(
+          child: Drawer(
+            child: Column(
+              children: [
+                ListTile(
+                  title: Text("Logout"),
+                ),
+              ],
+            ),
           ),
         ),
         floatingActionButton: Column(

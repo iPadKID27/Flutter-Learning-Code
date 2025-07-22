@@ -19,37 +19,6 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("Flutter Mapp"), centerTitle: true),
-        drawer: SafeArea(
-          child: Drawer(
-            child: Column(
-              children: [
-                ListTile(
-                  title: Text("Logout"),
-                ),
-              ],
-            ),
-          ),
-        ),
-        floatingActionButton: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            FloatingActionButton(
-              onPressed: () {
-                print("aksdjakjsd");
-              },
-              child: Icon(Icons.add),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            FloatingActionButton(
-              onPressed: () {
-                print("aksdjakjsd");
-              },
-              child: Icon(Icons.add),
-            ),
-          ],
-        ),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
